@@ -7,19 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4468AAB6207B45A100DE5A92 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4468AAB5207B45A100DE5A92 /* Preferences.swift */; };
-		4468AAB8207B469000DE5A92 /* Configuration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4468AAB7207B469000DE5A92 /* Configuration.xib */; };
-		4468AABA207B482C00DE5A92 /* ConfigurationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4468AAB9207B482C00DE5A92 /* ConfigurationController.swift */; };
-		44710B31207B3B6800096B2B /* TimeFliesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44710B30207B3B6800096B2B /* TimeFliesView.swift */; };
+		44FA3D44207BB317000077DB /* TimeFliesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44FA3D42207BB317000077DB /* TimeFliesView.h */; };
+		44FA3D45207BB317000077DB /* TimeFliesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FA3D43207BB317000077DB /* TimeFliesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4468AAB5207B45A100DE5A92 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
-		4468AAB7207B469000DE5A92 /* Configuration.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Configuration.xib; sourceTree = "<group>"; };
-		4468AAB9207B482C00DE5A92 /* ConfigurationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationController.swift; sourceTree = "<group>"; };
 		44710B23207B3B1C00096B2B /* TimeFlies.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeFlies.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		44710B2A207B3B1C00096B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44710B30207B3B6800096B2B /* TimeFliesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFliesView.swift; sourceTree = "<group>"; };
+		44FA3D42207BB317000077DB /* TimeFliesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeFliesView.h; sourceTree = "<group>"; };
+		44FA3D43207BB317000077DB /* TimeFliesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeFliesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +51,8 @@
 			children = (
 				44710B2A207B3B1C00096B2B /* Info.plist */,
 				44710B30207B3B6800096B2B /* TimeFliesView.swift */,
-				4468AAB5207B45A100DE5A92 /* Preferences.swift */,
-				4468AAB7207B469000DE5A92 /* Configuration.xib */,
-				4468AAB9207B482C00DE5A92 /* ConfigurationController.swift */,
+				44FA3D42207BB317000077DB /* TimeFliesView.h */,
+				44FA3D43207BB317000077DB /* TimeFliesView.m */,
 			);
 			path = TimeFlies;
 			sourceTree = "<group>";
@@ -68,6 +64,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FA3D44207BB317000077DB /* TimeFliesView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4468AAB8207B469000DE5A92 /* Configuration.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4468AABA207B482C00DE5A92 /* ConfigurationController.swift in Sources */,
-				4468AAB6207B45A100DE5A92 /* Preferences.swift in Sources */,
-				44710B31207B3B6800096B2B /* TimeFliesView.swift in Sources */,
+				44FA3D45207BB317000077DB /* TimeFliesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +194,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -252,7 +246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -261,10 +255,11 @@
 		44710B2E207B3B1C00096B2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HDAS685HR;
 				INFOPLIST_FILE = TimeFlies/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -283,10 +278,11 @@
 		44710B2F207B3B1C00096B2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HDAS685HR;
 				INFOPLIST_FILE = TimeFlies/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
