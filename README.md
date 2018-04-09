@@ -13,5 +13,5 @@ Download [Latest Release](https://github.com/vergilchoi/TimeFlies/releases) here
 
 # TODO
 
-- Support traditional chinese calendar
-- Age counter
+- [ ] Support traditional chinese calendar
+- [ ] Age counter
