@@ -13,5 +13,6 @@ Download [Latest Release](https://github.com/vergilchoi/TimeFlies/releases) here
 
 # TODO
 
+- [x] ~~Change back to Objective-C~~
 - [ ] Support traditional chinese calendar
 - [ ] Age counter
